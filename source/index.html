@@ -1,32 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Desafio Fhink</title>
+    <style>
+        h1{
+        color:rgb(201, 65, 2)
+    }
+    h3{
+        font-size: 20pxl
+    }
+    input{
+        width: 12%;
+    }
+    input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 81, 0);
+    border-radius: 4px;
+    }
+    input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 81, 0);
+    border-radius: 4px;
+    }
+    textarea[name=message] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 81, 0);
+    border-radius: 4px;
+    }
+    button {
+    background-color: rgb(255, 166, 125);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Desafio Fhink</h1>
     </header>
     <nav>
-        <h1>Formulario</h1>
+        <br>
+        <h1>Percebi que a sua nave esta com problemas...</h1>
+        <h2>Mande um email para os nossos setores de acordo com o problema da nave!</h2><br>
+        <h3>Abastecimento/Combustível: fuel@fhinck.com</h3>
+        <h3>Descarregar Carga: cargo@fhinck.com</h3>
+        <h3>Manutenção Elétrica/Eletrônica: eletr@fhinck.com</h3>
+        <h3>Manutenção Mecânica: mechanic@fhinck.com</h3>
+        <h3>Manutenção de Propulsores: prop@fhinck.com</h3>
+        <h3>Verificação de Sistemas: sys@ghinck.com</h3>
+        <h3>Limpeza da Aeronave: clean@fhinck.com</h3>
 
-            <form action="http://localhost:3004/usuarios" method="POST">
-                <input type="text" name="nome" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="text" name="message" placeholder="Mensagem" required>
-                <button>Incluir</button>
-            </form>
+        <form action="http://localhost:3004/sendEmail" method="POST">
+            Nome: <input type="text" name="nome" placeholder="Seu nome" required><br>
+            Destinatário:<input type="email" name="email" placeholder="O email" required><br>
+            Assunto: <input type="text" name="subject" placeholder="Qual o problema da sua nave?" required><br>
+            Mensagem:<textarea name="message" placeholder="Descreva os problemas" required></textarea><br>
+            <button>Enviar</button>
+        </form>
     </nav>
     <section></section>
     <footer>
-    
+
     </footer>
-  <script>
-  
-  
-  </script>
+    <script>
+
+
+    </script>
 </body>
+
 </html>
