@@ -1,5 +1,5 @@
-# fhink_frontend
-Front-end do desafio da Fhink
+# fhinck_frontend
+Front-end do desafio da Fhinck
 
 #### Comando para executar a aplicação
 ```
